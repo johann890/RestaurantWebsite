@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lukaria FAQ</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="background">
+    <div class="container">
+      <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="faq.html">FAQ</a>
+        <a href="regpay.html">Registration</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="faqsection">
+    <div class="faqtitle">
+      <h2><span class="brown">Frequently <br>
+          Asked Questions</span></h2> <!-- FAQ Heading on page-->
+    </div>
+
+    <!-- Each question is broken into a question/answer divs which are evenly spaced top-down the website
+         Each heading is stating with an underlined h3, followed by a small paragraph answer-->
+    <div class="faqquestion">
+      <h3><u>What if plans change?</u></h3>
+    </div>
+    <div class="faqanswer">
+      <p>Lukaria offers customers free rescheduling up to 12 hours prior to their lesson. <br>
+        Make sure to call the assistant number with details on when you would like your cooking lesson to be moved to.
+      </p>
+    </div>
+
+    <div class="faqquestion">
+      <h3><u>What ages are appropriate?</u></h3>
+    </div>
+    <div class="faqanswer">
+      <p>We encourage everyone of every age to take part in learning to cook. So feel free to sign up.
+        <br>
+        However, for safety purposes, students under the age of 18 must have a parent/guardian accompanying them during
+        the tutorial.
+      </p>
+    </div>
+
+    <div class="faqquestion">
+      <h3><u>Where are you located?</u></h3>
+    </div>
+    <div class="faqanswer">
+      <p>If you have any questions or scheduling changes and wish to do them in person, please visit our in-person
+        office during work hours. You are welcome to contact us and book an appointment if you wish.
+      </p>
+      <p>(1/935 High Street, Avalon, Lower Hutt 5011, Wellington)</p>
+    </div>
+    <!-- IFRAME of map location, given an own class where it is centered on the page-->
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95959.7056292807!2d174.80417264136585!3d-41.27097919899027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d475566b798daff%3A0xe4933bbb2daa339a!2sKitchen%20Manthra!5e0!3m2!1sen!2snz!4v1716192036805!5m2!1sen!2snz"
+        width="700" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="faqquestion">
+      <h3><u>How many attendees per lesson?</u></h3>
+    </div>
+    <div class="faqanswer">
+      <!-- Unordered list giving brief descriptions on the different services available-->
+      <p>We have various cooking tutorials to accomodate all your needs:</p>
+      <ul>
+        <li>Solo Tutorial: A private one-on-one session with your chef of choice and your selection of cuisine.</li>
+        <li>Group Tutorial: Up to 10 person session with a selected chef, tutorial of a 3-meal course.</li>
+        <li>Family Tutorial: Up to four persons selected by you with a chosen chef, tutorial of a dish that servers
+          four.</li>
+        <li>Duo Tutorial: Two person tutorial with a chef selected by both, tutorial of a dish that serves two.</li>
+      </ul>
+      <p>Visit <a href="services.html"> Services</a> for additional information.</p>
+    </div>
+
+    <div class="faqquestion">
+      <h3><u>What equipment do I need?</u></h3>
+    </div>
+    <div class="faqanswer">
+      <p>The equipment needed are an device which has a suitable microphone and camera, an application which can run the
+        tutorial such as Zoom should also be installed. Also required are the ingredients which are specified with the
+        cuisine/dish of choice. </p>
+    </div>
+
+    <div class="faqquestion">
+      <h3><u>How do I join a class?</u></h3>
+    </div>
+    <div class="faqanswer">
+      <p>If a class is confirmed, 30 minutes prior to the lesson a video call link (such as Zoom) is sent to your email.
+        You may join this call at your earliest convinence as a chef will be there to help you set up if needed.
+      </p>
+    </div>
+
+    <div class="faqquestion">
+      <h3><u>Ask Us A Question</u></h3>
+    </div>
+    <div class="faqanswer">
+      <br>
+      <h4>Enter details into form</h4>
+      <!-- FAQ form-->
+      <form name="FAQ" onsubmit="return validateForm()" method="post">
+        <p>Enter the topic of your question: (E.g. Tutorial timings, Chef enquiry...)</p>
+        <!-- Form has an input textbox for heading of question (topic statement) and the question itself-->
+        <input type="text" name="headline">
+        <br>
+        <br>
+        <p>Enter your enquiry:</p>
+        <textarea name="message" rows="10" cols="60"></textarea>
+        <br>
+        <input type="submit" name="submit">
+
+      </form>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p id="centerfooter">Copyright &#169; Johann Moses, 2024, all rights reserved</p>
+    <img src="footerimage.png" width=50px height=50px>
+  </div>
+
+</body>
+
+</html>

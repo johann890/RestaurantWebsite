@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lukaria Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script> <!-- Connect javascript file-->
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="container">
+            <div class="nav">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="faq.html">FAQ</a>
+                <a href="regpay.html">Registration</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="regbackground">
+        <div class="regform">
+            <h3>Create an Account</h3>
+            <!-- Create form to hold registrations, connect it to javascript method on action-->
+            <form name="reg" onsubmit="return regForm()" method="post">
+                <p>Username:</p>
+                <input type="text" name="username" placeholder="John" required>
+                <p>Password:</p>
+                <input type="text" name="password" placeholder="Smith" required>
+                <p>Email:</p>
+                <input type="text" name="email" placeholder="johnsmith@gmail.com" required>
+                <p>Phone Number:</p>
+                <input type="text" name="phone" placeholder="000 000 0000" required>
+                <!-- Javascript text fields are required (cannot be empty) and have placeholders for examples-->
+                <br>
+                <br>
+                <!-- Submit button-->
+                <input type="submit" name="submit" value="Register">
+            </form>
+
+        </div>
+
+        <hr>
+
+        <div class="regbackground">
+            <div class="regform">
+                <h3>Book A Tutorial</h3>
+                <div class="formcontainer">
+                    <p>Please enter date and time for Lukaria Tutorial:</p>
+                    <!-- Second form for details on booking-->
+                    <form name="detail" onsubmit="return detForm()" method="post">
+                        <!-- Date and time calender -->
+                        <input type="datetime-local" name="calender" required>
+                </div>
+                <div class="formcontainer">
+                    <p>What type of lesson would you like to have?</p>
+                    <select name="lesson">
+                        <!-- Dropdown box where users can select the type of lesson-->
+                        <option value="Lesson type">Select Lesson</option>
+                        <option value="solo">Solo Lesson</option>
+                        <option value="duo">Duo Lesson</option>
+                        <option value="family">Family Lesson</option>
+                        <option value="group">Group Lesson</option>
+                    </select>
+                </div>
+                <p>What skill level are you?</p>
+                <!-- Radio buttons so the user can select their skill level, skill level has an outline statement for detail-->
+                <span class="text">
+                    <input type="radio" name="skill level" value="Beginner" checked>Beginner - 'I am starting to learn
+                    to cook'<br>
+                    <input type="radio" name="skill level" value="intermediate">Intermediate - 'I have done some
+                    previous work in the kitchen'<br>
+                    <input type="radio" name="skill level" value="semi-pro">Semi-Pro - 'I am beginning to hone my
+                    skillset'<br>
+                    <input type="radio" name="skill level" value="professional">Professional - 'I am comfortable in the
+                    kitchen and want to perfect my skills'<br>
+                </span>
+                <!-- Textarea box where users can enter a description on what they would like to make-->
+                <p>Please enter your preferred cuisine, as well as any specific dishes and allergies:</p>
+                <textarea name="message" rows="10" cols="80"
+                    placeholder="My preference is South American cuisine, dishes such as Empanadas..."
+                    required></textarea>
+                <br>
+                <br>
+                <h5>Payment Details</h5>
+                <p>Your credit card number:</p>
+                <!-- Text and number fields for credit card details-->
+                <input type="text" name="creditnum" placeholder="0000 0000 0000 0000" required>
+                <p>Name on card:</p>
+                <input type="text" name="creditnam" placeholder="John Smith" required>
+                <p>CVV:</p>
+                <input type="number" name="password" placeholder="000" required>
+                <br>
+                <br>
+                <!-- Booking submit button-->
+                <input type="submit" name="pay" value="Book Now">
+                </form>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <p id="centerfooter">Copyright &#169; Johann Moses, 2024, all rights reserved</p>
+            <img src="footerimage.png" width=50px height=50px>
+        </div>
+
+</body>
+
+</html>

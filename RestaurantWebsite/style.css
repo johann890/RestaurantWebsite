@@ -1,0 +1,352 @@
+/* import relevant Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+/* Set body to black aswell as block to take up full width */
+body {
+  background-color: black;
+  background-size: 100%;
+  margin: 0;
+  display: block;
+}
+
+/* Heading image on page, set in center of page and cover entire div*/
+.background {
+  background-image: url("pageheader.png");
+  background-size: cover;
+  min-height: 500px; 
+  background-position: center;
+  position: relative;
+}
+
+/* Position the navbar ontop of image*/
+.container {
+  position: absolute; /* Don't need to align position as in block fixed display */
+  margin: 20px;
+  width: auto;
+}
+
+/* Top navbar sat on left of image */
+.nav {
+  overflow: hidden;
+  background-color: black;
+  font-family: "Oswald", sans-serif;
+  border-radius: 10px; /* Rounded edges of navbar box */
+}
+
+/* Each individual link of the navbar, set to white on the left side stacking */
+.nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px; /* Pad each text so there are top/bottom and side gaps */
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change nav according to user mouse: 
+  - if hover make background white
+  - if on click make text orange and grey the background
+  - if visited make text red*/
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nav a:active {
+  background-color: #858382;
+  color: orange;
+}
+
+/* If page is visited set text to red */
+.nav a:visited {
+  color: #ad1111;
+}
+
+/* INDEX PAGE CSS */
+
+/* Section div, a small black blox which contains the about vision*/
+.section {
+  width: 100%;
+  height: 480px;
+  background-color: black;
+  padding: 0px;
+}
+
+/* About division contains the image divs and the text div*/
+.about {
+  margin-top: 0px;
+  margin-left: 120px;
+  width: 40%; /*Use a percentage on width so can cooperate with minimal window resizing */
+  height: 80px;
+  background-color: black;
+}
+
+/* Inner div which contains the paragrah text, set slightly offset left of page */
+.aboutparagraph {
+  margin-top: 0px;
+  margin-left: 70px;
+  width: 80%;
+  height: 80px;
+}
+
+/* Div class containing the home image, set more offset on the left to balance out paragraph div */
+.homeimage {
+  margin-left: 720px;
+  margin-top: -50px;
+  width: 40%;
+  height: 380px;
+  background-color: red;
+  position: absolute;
+  background-image: url("about.png"); /* Set entire background of div to image */
+}
+
+/* Largest heading, contains young serif font and is of the biggest size */
+h1 {
+  font-family: "Young Serif", serif;
+  font-size: 90px;
+  color: white;
+  margin-top: 35px;
+  margin-bottom: 0px;
+}
+
+/* Every following header has the same font and colour, but various sizes representitive of their heading heirarchy */
+h2 {
+  line-height: 80px;
+  font-family: "Young Serif", serif;
+  font-size: 90px;
+  color: white;
+  margin-top: 35px;
+  margin-bottom: 0px;
+}
+
+h3 {
+  font-family: "Young Serif", serif;
+  font-size: 60px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+h4 {
+  font-family: "Young Serif", serif;
+  font-size: 45px;
+  color: white;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+h5 {
+  font-family: "Young Serif", serif;
+  font-size: 25px;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+/* Regular paragraph text */
+p {
+  font-family: "Oswald", sans-serif;
+  color: white;
+}
+
+/* Span classes for certain colours of text */
+.red {
+  color: #ad1111;
+}
+
+.orange {
+  color: #f08141;
+}
+
+.brown {
+  color: #ad6c36;
+  font-size: 80px;
+}
+
+/* Bottom footer div for copyright statement */
+.footer {
+  width: 100%;
+  height: 50px;
+  background-color: #292828;
+  position: absolute; /* Set position on page */
+  display: flex; /* Use flexbox so text and image can go sidebyside */
+  align-items: center; /* Align contents both vertically and horizontally center in the footer */
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.footer img {
+  margin-left: 10px; /* Set a gap between the text and image */
+}
+
+/* Selector which aligns certain headers (e.g. the About Us on the index page) */
+#center {
+  text-align: center;
+}
+
+/* Additional selector to set the footer text in the center of the footer */
+#centerfooter {
+  text-align: center;
+  color: #787878;
+}
+
+
+/* Frequently Asked Questions Page CSS */
+
+/* Longer section div which holds all the questions */
+.faqsection {
+  width: 100%;
+  height: 2340px;
+  background-color: black;
+  padding: 0px;
+}
+
+/* Division to hold the 'Frequently Asked Question' title on page*/
+.faqtitle {
+  background-color: black;
+  width: 70%;
+  height: 100px;
+  margin-left: 20%;
+  margin-bottom: 120px;
+  margin-left: 18%;
+}
+
+/* Division to hold the iframme map of Lukaria office location */
+.map {
+  margin-bottom: 30px;
+  position: relative;
+  height: 350px;
+  margin-top: 5px;
+  margin-left: 18%;
+}
+
+/* Sets each list element of the unordered list to have the same font and even spacing */
+li {
+  font-family: "Oswald", sans-serif;
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* Division which holds each questions title, set in center and evenly spaced between bottom and top of previous and after answers */
+.faqquestion {
+  background-color: black;
+  width: 75%;
+  height: 60px;
+  margin-left: 18%;
+  position: relative; /* Positions of content text and image elements are relative as padding/margins are needed to align them on page */
+  margin-top: 0px;
+}
+
+/* Division to hold each question, set below the question div with margins by its relative position */
+.faqanswer {
+  background-color: black;
+  width: 60%;
+  height: auto; /* Auto height so can wrap around the amount of text, this means I don't need to resize heading margins */
+  margin-left: 18%;
+  position: relative;
+  margin-top: 20px;
+  line-height: 20px;
+}
+
+/* Set the input text box width */
+input[type=text],
+headline {
+  width: 40%;
+}
+
+/* Services page CSS */
+/* Tutorials division holds all the images and information of all the different services lukaria offers */
+.tutorials {
+  width: 100%;
+  height: 2520px;
+  background-color: black;
+  padding: 0px;
+}
+
+/*Each image has their own division because of the varying images being used
+background-image used for appropriate scaling over a fit size */
+.soloimage {
+  background-image: url("solotutorials.png");
+  min-height: 400px;
+  width: 100%;
+  background-position: center;
+  position: relative;
+  background-size: cover; /* Make sure image streches to fit division size */
+}
+
+.groupimage {
+  background-image: url("grouptutorial.png");
+  min-height: 400px;
+  width: 100%;
+  background-position: center;
+  position: relative;
+  background-size: cover;
+}
+
+.familyimage {
+  background-image: url("familytutorial.png");
+  min-height: 400px;
+  width: 100%;
+  background-position: center;
+  position: relative;
+  background-size: cover;
+}
+
+.duoimage {
+  background-image: url("duotutorial.png");
+  min-height: 400px;
+  width: 100%;
+  background-position: center;
+  position: relative;
+  background-size: cover;
+}
+
+/* Description division which is holds each service description, auto height to fit for text and spaced evenly */
+.description {
+  background-color: black;
+  width: 60%;
+  height: auto;
+  margin-left: 18%;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+
+/* Payment Page CSS */
+/* Division containing all the form information */
+.regbackground {
+  width: 100%;
+  height: 880px;
+  background-color: black;
+  padding: 0px;
+}
+
+/* Division containing the above register form, spaces slightly off from the left with a height fitting the amount of values */
+.regform {
+  background-color: black;
+  width: 60%;
+  height: auto;
+  margin-left: 28%;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+
+/* Text class to format the text of radio buttons */
+.text {
+  font-family: "Oswald", sans-serif;
+  color: white;
+}
+
+/*Form container class which helps align text and textboxes boxes next to each other, the values are aligned horizontally */
+.formcontainer {
+  display: flex;
+  align-items: center;
+}
+
+/* Set the margin between the text and textboxes */
+.formcontainer p {
+  margin-right: 10px;
+}
